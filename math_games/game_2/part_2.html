@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+  <head>
+     <meta charset="utf-8">
+     <link rel="stylesheet" href="../../style.css">
+     <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header>
+      <a href="../../math.html" class="logo">Matemáticas</a>
+      <div class="bx bx-menu" id="menu-icon"></div>
+
+      <ul class="navbar">
+        <li><a href="../../index.html">Inicio</a></li>
+        <li><a href="../../nosotros.html">Sobre Nosotros</a></li>
+        <li><a href="../../index.html#menu">Áreas</a></li>
+        <li><a href="../../index.htm#services">Más Recursos</a></li>
+        <li><a href="../../index.htm#contact">Contacto</a></li>
+      </ul>
+	</header>
+	
+
+	
+	<br><br><br><br><br>
+	<h1 style="text-align: center;">Selecciona la imagen que sea un Pez Globo</h1>
+	<div id="contenedor">
+		<img src="https://th.bing.com/th/id/OIP.TQ15IiwR28QMX_QAqSA4awHaF_?w=232&h=186&c=7&r=0&o=5&pid=1.7" id="nemo">
+		<img src="https://th.bing.com/th/id/R.ac36690f67dedf71723871e320ad4fb2?rik=H3DhsWS5UdGJNA&pid=ImgRaw&r=0" id="tiburon">
+		<img src="https://th.bing.com/th/id/OIP.cDUEgywX9PNrbaCZ7hNX_wHaHO?w=221&h=215&c=7&r=0&o=5&pid=1.7" id="delfin">
+        <img src="https://th.bing.com/th/id/OIP.D4fcmW0hd-RTZXcUG_8eKgHaGJ?w=256&h=212&c=7&r=0&o=5&pid=1.7" id="Pez globo">
+        <img src="https://th.bing.com/th/id/OIP.E3UA9Ihw82-Mt_T6pOIefAHaEV?w=321&h=188&c=7&r=0&o=5&pid=1.7" id="tilápia">
+		<img src="https://th.bing.com/th/id/OIP.YA7JBKGGJxB9wA3db0fpqwHaG7?w=204&h=191&c=7&r=0&o=5&pid=1.7" id="ballena">
+	</div>
+
+
+
+
+    
+	<img src="https://i.imgur.com/9ThqsgJ.png" id="trofeo" style="display: none;">
+	<div id="trofeoMensaje" style="display: none;">
+		<img src="https://i.ibb.co/HtJX35w/Trofeo2-SN-FOndo.png" alt="Trofeo" width="200">
+		<p>¡Felicidades, acertaste!</p>
+        <button onclick="window.location.href='part_3.html'"style="background-color: orange; color: white; padding: 20px;">Siguiente Nivel</button>
+
+        </div><button onclick="window.location.href='../../math.html'" style="background-color: orange; color: white; padding: 20px;">Ir al login</button>
+	</body>
+	<script>
+var Pez = document.getElementById("Pez globo");
+var nemo = document.getElementById("nemo");
+var tiburon = document.getElementById("tiburon");
+var delfin= document.getElementById("delfin");
+var tilápia = document.getElementById("tilápia");
+var ballena = document.getElementById("ballena");
+var trofeo = document.getElementById("trofeo");
+var trofeoMensaje = document.getElementById("trofeoMensaje");
+
+Pez.onclick = function() {
+	if (Pez.getAttribute("src") == "https://th.bing.com/th/id/OIP.D4fcmW0hd-RTZXcUG_8eKgHaGJ?w=256&h=212&c=7&r=0&o=5&pid=1.7") {
+		trofeo.style.display = "block";
+		trofeoMensaje.style.display = "flex";
+	}
+}
+nemo.onclick = function() {
+	if (nemo.getAttribute("src") == "https://th.bing.com/th/id/OIP.TQ15IiwR28QMX_QAqSA4awHaF_?w=232&h=186&c=7&r=0&o=5&pid=1.7") {
+		nemo.style.opacity = "0.1";
+	
+		alert("LA IMAGEN ES INCORRECTA"); // muestra un mensaje de alerta
+  } else {
+    // si la imagen no es la imagen correcta, puedes agregar aquí alguna otra acción si lo deseas
+  }
+}
+tiburon.onclick = function() {
+	if (tiburon.getAttribute("src") == "https://th.bing.com/th/id/R.ac36690f67dedf71723871e320ad4fb2?rik=H3DhsWS5UdGJNA&pid=ImgRaw&r=0") {
+		tiburon.style.opacity = "0.1";
+	
+		alert("LA IMAGEN ES INCORRECTA"); // muestra un mensaje de alerta
+  } else {
+    // si la imagen no es la imagen correcta, puedes agregar aquí alguna otra acción si lo deseas
+  }
+}
+delfin.onclick = function() {
+	if (delfin.getAttribute("src") == "https://th.bing.com/th/id/OIP.cDUEgywX9PNrbaCZ7hNX_wHaHO?w=221&h=215&c=7&r=0&o=5&pid=1.7") {
+		delfin.style.opacity = "0.1";
+	
+		alert("LA IMAGEN ES INCORRECTA"); // muestra un mensaje de alerta
+  } else {
+    // si la imagen no es la imagen correcta, puedes agregar aquí alguna otra acción si lo deseas
+  }
+}
+tilápia.onclick = function() {
+	if (tilápia.getAttribute("src") == "https://th.bing.com/th/id/OIP.E3UA9Ihw82-Mt_T6pOIefAHaEV?w=321&h=188&c=7&r=0&o=5&pid=1.7") {
+		tilápia.style.opacity = "0.1";
+	
+		alert("LA IMAGEN ES INCORRECTA"); // muestra un mensaje de alerta
+  } else {
+    // si la imagen no es la imagen correcta, puedes agregar aquí alguna otra acción si lo deseas
+  }
+}
+ballena.onclick = function() {
+	if (ballena.getAttribute("src") == "https://th.bing.com/th/id/OIP.YA7JBKGGJxB9wA3db0fpqwHaG7?w=204&h=191&c=7&r=0&o=5&pid=1.7") {
+		ballena.style.opacity = "0.1";
+	
+		alert("LA IMAGEN ES INCORRECTA"); // muestra un mensaje de alerta
+  } else {
+    // si la imagen no es la imagen correcta, puedes agregar aquí alguna otra acción si lo deseas
+  }
+}
+
+window.onclick = function(event) {
+	if (event.target == trofeo) {
+		trofeo.style.display = "none";
+		trofeoMensaje.style.display = "none";
+	}
+}
+
+	</script>
+
+<style>
+	body {
+		background-color: #2b2640; /* Cambia el color aquí */
+	}
+</style>
+
+
+</body>
+</html>

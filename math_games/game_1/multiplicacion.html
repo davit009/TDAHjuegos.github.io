@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Juego de suma</title>
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" type="image/x-icon" href="plus.ico">
+</head>
+<body>
+    <header>
+        <a href="../../math.html" class="logo">Matemáticas</a>
+        <div class="bx bx-menu" id="menu-icon"></div>
+
+        <ul class="navbar">
+            <li><a href="../../index.html">Inicio</a></li>
+                <li><a href="../../nosotros.html">Sobre Nosotros</a></li>
+                <li><a href="../../index.html#menu">Áreas</a></li>
+                <li><a href="../../index.html#services">Más Recursos</a></li>
+                <li><a href="../../index.html#contact">Contacto</a></li>
+        </ul>
+    </header>
+
+	<div class="container">
+        <h1 class="game-title">JUEGO DE Multiplicaciones</h1>
+        <div class="operations">
+            <div class="izquierdo">
+                <div class="container-operacion">
+                    <span id="multiplicacion">8 x 4 = </span>
+                    <span class="resultado" id="resultado"> 16</span>
+                </div>
+                <span class="msj" id="msj"></span>
+            </div>
+            <div class="derecha">
+                <span id="op1" class="opcion" onclick="controlarRespuesta(this)">16</span>
+                <span id="op2" class="opcion" onclick="controlarRespuesta(this)">12</span>
+                <span id="op3" class="opcion" onclick="controlarRespuesta(this)">7</span>
+            </div>
+        </div>
+	</div>
+
+    <div id="score_progress">
+        <div class="score" id="score_bar">
+            <p id="bar-score">0</p>
+        </div>
+    </div>
+
+    <div id="lives_progress">
+        <div class="lives" id="lives_bar">
+            <p id="bar-lives">0</p>
+        </div>
+    </div>
+
+    <p id="lives"></p>
+    <div class="footer">
+		<a class="btn" href="../../math.html">Regresar</a>
+	</div>
+    <script src="scriptsmult.js"></script>
+</body>
+</html>

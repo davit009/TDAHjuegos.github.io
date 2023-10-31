@@ -50,8 +50,20 @@ function comenzar(){
 function loseLive() {
     lives--;
     livesHtml.innerHTML = lives;
-	reducirBarraLives((lives/maxLives)*100)
+    reducirBarraLives((lives/maxLives)*100);
+
+    // game over
+    if (lives <= 0) {
+        var overlay = document.getElementById("overlay");
+        overlay.style.display = "block";
+
+        var gameOverContainer = document.getElementById("gameOverContainer");
+        gameOverContainer.style.display = "block";
+    }
 }
+
+		
+
 
 function controlarRespuesta(opcionElegida){	
 	txt_resultado.innerHTML = opcionElegida.innerHTML;
@@ -99,4 +111,21 @@ function reducirBarraLives(porcentaje) {
     livesBar.style.transitionDuration = `0.5s`;
     livesBar.style.width =`${porcentaje}%`;
 	livesHtml.innerHTML = `${lives}/${maxLives}`;
+}
+function reiniciarJuego() {
+    // Restablecer variables
+    score = 0;
+    lives = maxLives;
+    currentQuestion = 0;
+    scoreHtml.innerHTML = `0/${numQuestions}`;
+    livesHtml.innerHTML = `${lives}/${maxLives}`;
+    avanzarBarraScore(0);
+    reducirBarraLives(100);
+
+    // Ocultar el overlay y la imagen de game over
+    var overlay = document.getElementById("overlay");
+    overlay.style.display = "none";
+
+    // Comenzar el juego nuevamente
+    comenzar();
 }

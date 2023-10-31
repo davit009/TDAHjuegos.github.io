@@ -89,6 +89,14 @@ section{
     background: var(--main-color);
     color: #fff;
     border-radius: 0.5rem;
+    margin-right: 10px;
+}
+.bx-math {
+    display: flex;
+    align-items: center; 
+}
+.btn:last-child {
+    margin-right: 0; 
 }
 .btn:hover{
     transform: scale(1.2) translateY(10px);

@@ -110,5 +110,44 @@ body{
 #lives_progress #lives_bar {
 	background-color: red;
 }
+#gameOverContainer {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1001; /* Asegurarse de que esté por encima del overlay */
+    text-align: center; /* Centrar los elementos internos, como el botón */
+}
 
+#gameOverImage {
+    max-width: 50%; 
+    margin-bottom: 20px; /* Espacio entre la imagen y el botón */
+}
+
+#retryButton {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #0099FF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#retryButton:hover {
+    background-color: #0077CC; /* Un tono más oscuro para el hover */
+}
+
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo negro con 70% de opacidad */
+    z-index: 999; /* Por debajo de la imagen y el botón, pero por encima del resto */
+}
 

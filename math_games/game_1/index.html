@@ -21,7 +21,11 @@
                 <li><a href="../../index.html#contact">Contacto</a></li>
         </ul>
     </header>
-
+    <div id="overlay" style="display: none;">
+        <img id="gameOverImage" src="https://img.asmedia.epimg.net/resizer/WApEV1TXrEYofnZht4zmVuH1-3M=/1472x1104/cloudfront-eu-central-1.images.arcpublishing.com/diarioas/BZDZ4ANFXNNOVAF2ZBBXAAJJWU.jpg">
+        <button id="retryButton" onclick="reiniciarJuego()">Jugar de nuevo</button>
+    </div>
+    
 	<div class="container">
         <h1 class="game-title">JUEGO DE SUMA</h1>
         <div class="operations">
@@ -37,6 +41,7 @@
                 <span id="op2" class="opcion" onclick="controlarRespuesta(this)">17</span>
                 <span id="op3" class="opcion" onclick="controlarRespuesta(this)">8</span>
             </div>
+            
         </div>
 	</div>
 

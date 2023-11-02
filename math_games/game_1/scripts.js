@@ -126,6 +126,6 @@ function reiniciarJuego() {
     var overlay = document.getElementById("overlay");
     overlay.style.display = "none";
 
-    // Comenzar el juego nuevamente
+    // Comenzar el juego nuevamente8
     comenzar();
 }

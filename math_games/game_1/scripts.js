@@ -1,5 +1,5 @@
 const maxLives = 3
-const numQuestions = 15;
+const numQuestions = 6;
 let lives = maxLives;
 let currentQuestion = 0;
 
@@ -46,6 +46,11 @@ function comenzar(){
 		op3.innerHTML = respuesta;
 	}
 }
+// Funcion para parar el juego una vez que conteste todas las respuestas bien
+
+
+
+
 
 function loseLive() {
     lives--;

@@ -1,4 +1,4 @@
-let preguntas = ["¿Que es la electricidad?", "¿Cuál es la unidad de medida de la corriente eléctrica?", "¿Qué dispositivo se utiliza para medir la corriente eléctrica?", "¿Cuál es la diferencia entre un circuito en serie y un circuito en paralelo?", "¿Qué es un conductor eléctrico?"];
+let preguntas = ["¿Que es la electricidad?", "¿Cuál es la unidad de medida de la corriente eléctrica?", "¿Qué dispositivo se utiliza para medir la corriente eléctrica?", "¿Cuál es la fórmula de la fuerza en física?", "¿Qué es un conductor eléctrico?"];
 
 
 let correcta = [2,2,1,1,0];
@@ -9,7 +9,7 @@ let opciones = [];
 opciones.push(["un tipo de energia", "flujo de agua", "forma de luz"]);
 opciones.push(["voltio.", "watt", "amperio"]);
 opciones.push(["Voltimetro.", "termometro", "Barometro"]);
-opciones.push(["Alá", "Ala", "Hala"]);
+opciones.push([" Fuerza = Masa x Aceleración", "Fuerza = Masa / Aceleración", " Fuerza = Masa + Aceleración"]);
 opciones.push(["Una persona que repara circuitos eléctricos.", "Un dispositivo que almacena electricidad.", "Un material que permite el paso fácil de la electricidad."]);
 
 

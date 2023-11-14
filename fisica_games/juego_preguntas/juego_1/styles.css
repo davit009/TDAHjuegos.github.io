@@ -1,39 +1,107 @@
+/* Estilos Generales y Variables */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+    list-style: none;
+    text-decoration: none;
+}
+:root{
+    --main-color:#ff702a;
+    --secondary-color:#feeee7;
+    --text-color:#fff;
+    --bg-color:#1e1c2a;
+    --big-font:4rem;
+    --h2-font:2.25rem;
+    --p-font:0.9rem;
+}
+*::selection{
+    background: var(--main-color);
+    color:#fff;
+}
 body{
-    margin-top: 118px;
+   color: var(--text-color);
+   background: var(--bg-color);
+   margin-top: 118px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+/* Header y Logo */
+header{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1000;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
+    justify-content: space-between;
+    padding: 30px 170px;
+    background: var(--bg-color);
+}
+.logo{
+    color: var(--main-color);
+    font-weight: 600;
+    font-size: 2.4rem;
 }
 
-h1{
-    width: fit-content;
-    background-color: #fff;
-    margin: 40px auto;
-    border-radius: 60px;
-    box-shadow: 5px 5px 0 #000;
-    padding: 20px 30px;
+/* Navbar */
+.navbar{
+    display: flex;
+}
+.navbar a{
+    color: var(--text-color);
+    font-size: 1.1rem;
+    padding: 10px 20px;
+    font-weight: 500;
+}
+.navbar a:hover{
+    color: var(--main-color);
+    transition: .4s;
 }
 
-/* PANTALLA INICIO */
-
-
-
-
-
-/* PANTALLA juego */
-#pantalla-juego{
+/* Menu Icon */
+#menu-icon{
+    font-size: 2rem;
+    cursor: pointer;
     display: none;
 }
 
+/* Secciones Generales */
+section{
+    padding: 70px 17%;
+}
+
+/* Botón General */
+.btn, .btn-inf{
+    display: inline-block;
+    padding: 10px 20px;
+    background: var(--main-color);
+    color: #fff;
+    border-radius: 0.5rem;
+    margin-right: 10px;
+}
+.btn:hover, .btn-inf:hover{
+    transform: scale(1.2) translateY(10px);
+    transition: .4s;
+}
+.btn:last-child {
+    margin-right: 0; 
+}
+
+/* Estilos Específicos de Pantallas y Elementos */
+#pantalla-juego, #pantalla-final{
+    display: none;
+}
 .pantalla-juego{
     max-width: 800px;
     margin: 50px auto;
     text-align: center;
-}
-.pantalla-juego img{
-    max-width: 400px;
-    width: 100%;
 }
 .opciones{
     max-width: 400px;
@@ -47,7 +115,9 @@ h1{
     margin: 30px auto;
     cursor: pointer;
 }
-.opcion .letra{
+
+/* Estilos para Letras y Nombres en Opciones */
+.opcion .letra, #pantalla-final #numCorrectas, #pantalla-final #numIncorrectas{
     background-color: var(--main-color);
     width: 50px;
     height: 50px;
@@ -69,46 +139,77 @@ h1{
     z-index: -2;
     border-radius: 0 20px 20px 0;
 }
-/* clases que se aplicará cuando haya acertada la opcion  */
-.opcion .nombreAcertada{
+
+/* Estilos para Respuestas Correctas e Incorrectas */
+.opcion .nombreAcertada, .opcion .letraAcertada{
     background-color: yellowgreen;
     color: #fff;
 }
-.opcion .letraAcertada{
-    background-color: yellowgreen;
-    color: #fff ;
-}
-/* clases que se aplicaran cuando se equivoque en la opcion elegida */
-.opcion .nombreNoAcertada{
-    background-color: darkred;
-    color: #fff;
-}
-.opcion .letraNoAcertada{
+.opcion .nombreNoAcertada, .opcion .letraNoAcertada{
     background-color: darkred;
     color: #fff;
 }
 
-
-
-
-/* PANTALLA final */
-#pantalla-final{
-    display: none;
+/* Media Queries para Responsividad */
+@media (max-width: 1560px){
+    header{
+        padding: 15px 40px;
+    }
+    :root{
+        --big-font: 3.5rem;
+        --h2-font:2rem;
+    }
+}
+@media (max-width: 1140px){
+    section{
+        padding: 50px 8%;
+    }
+    #menu-icon{
+        display: initial;
+        color:var(--text-color);
+    }
+    header .navbar{
+        position: absolute;
+        top: -400px;
+        left: 0;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        background:#2b2640;
+        transition: .3s;
+    }
+    header .navbar.active{
+        top: 70px;
+    }
+    .navbar a{
+        padding: 1.5rem;
+        display: block;
+    }
+    .col{
+        width:50%;
+        margin-bottom: 10px;
+    }
+}
+@media (max-width: 720px){
+   .header{
+    padding: 10px 16px;
+   }
+   .home, .about{
+    grid-template-columns: 1fr;
     text-align: center;
+   }
+   .about-img{
+    order:2;
+   }
+   section{
+    padding: 100px 7%;
+   }
 }
-#pantalla-final #numCorrectas{
-    background-color: chartreuse;
-    display: inline-block;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    border: 5px solid #fff;
+@media(max-width: 75px){
+    .col{
+        width: 100%;
+    }
 }
-#pantalla-final #numIncorrectas{
-    background-color: darkred;
-    display: inline-block;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    border: 5px solid #fff;
-}
+
+

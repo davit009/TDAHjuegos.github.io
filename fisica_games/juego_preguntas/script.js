@@ -6,11 +6,11 @@ let correcta = [2,2,1,1,0];
 
 let opciones = [];
 
-opciones.push(["un tipo de energia", "flujo de agua", "forma de luz"]);
+opciones.push(["forma de luz ", "flujo de agua", "un tipo de energia"]);
 opciones.push(["voltio.", "watt", "amperio"]);
-opciones.push(["Voltimetro.", "termometro", "Barometro"]);
-opciones.push([" Fuerza = Masa x Aceleración", "Fuerza = Masa / Aceleración", " Fuerza = Masa + Aceleración"]);
-opciones.push(["Una persona que repara circuitos eléctricos.", "Un dispositivo que almacena electricidad.", "Un material que permite el paso fácil de la electricidad."]);
+opciones.push(["termometro.", "Voltimetro", "Barometro"]);
+opciones.push(["Fuerza = Masa / Aceleración", "Fuerza = Masa x Aceleración", " Fuerza = Masa + Aceleración"]);
+opciones.push(["Un material que permite el paso fácil de la electricidad.", "Un dispositivo que almacena electricidad.", "Una persona que repara circuitos eléctricos. "]);
 
 
 let posActual = 0;

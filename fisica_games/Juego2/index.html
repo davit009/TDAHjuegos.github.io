@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Clasificación de Objetos</title>
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<header>
+    <a href="../../../fisica.html" class="logo">Fisica y Electricidad</a>
+        <div class="bx bx-menu" id="menu-icon"></div>
+
+    <ul class="navbar">
+      <li><a href="../../index.html">Inicio</a></li>
+      <li><a href="../../nosotros.html">Sobre Nosotros</a></li>
+      <li><a href="../../index.html#menu">Áreas</a></li>
+      <li><a href="../../index.htm#services">Más Recursos</a></li>
+      <li><a href="../../index.htm#contact">Contacto</a></li>
+    </ul>
+   
+</header>
+<br>
+<body>
+    <div class="contenedor">
+        <br>
+        <h1 style="color: #ff702a;">Clasificacion de objetos </h1>
+        <p> * Arrastra las imagenes al cuadro correspondiente *</p>
+        <br>
+        <div id="todosLosObjetos">
+            <h2 id="h2">Objetos</h2>
+
+        </div>
+
+        <div id="aislantes" class="contenedor-imagenes">
+            <img src="img\tronco.png" id="aislante1" class="arrastrable" draggable="true"
+                style="height: 200px; width: 200px;" data-tipo="aislante">
+            <img src="img\clip.png" id="conductor1" class="arrastrable" draggable="true"
+                style="height: 200px; width: 200px;" data-tipo="conductor">
+            <img src="img\1cup.png" id="aislante3" class="arrastrable" draggable="true"
+                style="height: 200px; width: 200px;" data-tipo="aislante">
+            <img src="img\tuerca.png" id="conductor2" class="arrastrable" draggable="true"
+                style="height: 200px; width: 200px;" data-tipo="conductor">
+            <img src="img\silla.png" id="aislante2" class="arrastrable" draggable="true"
+                style="height: 200px; width: 200px;" data-tipo="aislante">
+            <img src="img\llavenuda.png" id="conductor3" class="arrastrable" draggable="true"
+                style="height: 200px; width: 200px;" data-tipo="conductor">
+        </div>
+
+        <div id="advertencia" style="display: none;">
+            <p>Este objeto no es conductor. Por favor, intenta de nuevo.</p>
+        </div>
+        <div id="advertencia" style="display: none;">
+            <p>Este objeto no es un aislante. Por favor, intenta de nuevo.</p>
+        </div>
+        <div id="advertenciag" style="display: none;">
+            <p> Por favor, intenta ingresar el objeto de nuevo.</p>
+        </div>
+
+        <div class="row">
+            <div class="col">
+
+                <div class="titulo-y-boton">
+                    <h2 id="titlo">Objetos Conductores </h2>
+                    <button id="botonAyuda">
+                        <span>?</span>
+                        <span class="tooltip-text">Aquí puedes encontrar información útil sobre cómo clasificar los objetos.</span>
+                    </button>
+                </div>
+                <div id="areaConductores" class="contenedor contenedor-opciones">
+
+
+                </div>
+            </div>
+            <div class="col">
+                <div class="titulo-y-boton">
+                    <h2 id="titlo">Objetos Aislantes</h2>
+                    <button id="botonAyuda">
+                        <span>?</span>
+                        <span class="tooltip-text">Aquí puedes encontrar información útil sobre cómo clasificar los objetos.</span>
+                    </button>
+                </div>
+                <div id="areaAislantes" class="contenedor contenedor-opciones">
+
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script src="scripts.js"></script>
+</body>
+
+</html>

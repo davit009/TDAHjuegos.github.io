@@ -1,0 +1,211 @@
+.contenedor {
+    /* Borde sutil */
+    background-color: #1e1c2a; /* Fondo claro */
+    border-radius:20px ;
+
+    width: 90%; /* Ancho relativo para alineación horizontal */
+    min-height: 250px; /* Altura mínima */
+    margin-left: 50px;
+    padding: 20px;  
+    float: center; /* Coloca los contenedores en línea */
+    text-align: center; /* Centra el texto del título */
+}
+.contenedor-imagenes {
+    border: 2px solid #ccc; /* Borde sutil */
+    background-color: #ffedcf; /* Fondo claro */
+    border-radius:15px ;
+
+    width: 90%; /* Ancho relativo para alineación horizontal */
+    min-height: 350px; /* Altura mínima */
+    margin-left: 50px;
+    padding: 20px;
+     /* Coloca los contenedores en línea */
+    text-align: center; /* Centra el texto del título */
+}	
+
+.contenedor-opciones {
+    border: 2px solid #ccc; /* Borde sutil */
+    background-color: #ffedcf; /* Fondo claro */
+    border-radius:15px ;
+
+    width: 80%; /* Ancho relativo para alineación horizontal */
+    min-height: 250px; /* Altura mínima */
+    margin-top: 40px;
+    margin-left: 50px;
+    padding: 20px;
+     /* Coloca los contenedores en línea */
+    text-align: center; /* Centra el texto del título */
+    display: flex; /* Para alinear los objetos horizontalmente */
+    flex-wrap: wrap; /* Permite múltiples líneas de objetos */
+    justify-content: space-around; /* Espaciado alrededor de los objetos */
+    align-items: center;
+}	
+#h2 {
+    
+    color: #ff702a; /* Color del título */
+    margin-bottom: 10px; /* Espaciado debajo del título */
+}
+
+.row {
+    display: flex; /* Activa Flexbox */
+    justify-content: space-between; /* Espacia los elementos uniformemente */
+}
+
+.col {
+    flex: 1; /* Hace que cada columna ocupe un espacio igual en el contenedor */
+    padding: 10px; /* Espacio opcional entre las columnas */
+}
+
+#advertencia {
+    display: none; /* Oculto inicialmente */
+    border: 4px solid #ff0000; /* Borde rojo para la advertencia */
+    background-color: #ffedcf; /* Fondo rojo claro */
+    color: #fd0000; /* Texto en rojo para destacar la advertencia */
+    padding: 20px; /* Espaciado interno para el texto */
+    margin: 20px auto; /* Centrado y con margen exterior */
+    width: 60%; /* Ancho medio para mejor lectura */
+    text-align: center; /* Texto centrado */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.5); /* Sombra suave para resaltar */
+    font-size: 1.7em;
+}
+.contenedor-opciones img {
+    width: 100%; /* Ajusta al ancho del contenedor */
+    height: auto; /* Mantiene la relación de aspecto */
+}
+/* pagina de inicio */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Altura completa de la ventana */
+}
+
+.contenedor-central {
+    text-align: center;
+    width: 60%; /* Ajusta el ancho según prefieras */
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+h1 {
+    font-size: 2em; /* Tamaño más grande para el título */
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.descripcion, .instrucciones {
+    font-size: 1.2em; /* Tamaño de letra más grande para la descripción y las instrucciones */
+    margin: 20px 0;
+}
+
+button {
+    background-color: #4CAF50; /* Color de fondo verde */
+    color: white;
+    padding: 15px 32px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #367c39; /* Color al pasar el mouse */
+}
+
+body, h1, h2, p {
+    font-weight: 600; /* Un peso medio-negrita */
+}
+#botonAyuda {
+    background-color: #3258ff; /* Color de fondo */
+    color: white; /* Color del texto */
+    position: relative;
+    border-radius: 50%; /* Redondea los bordes para formar un círculo */
+    border: none; /* Sin borde */
+    cursor: pointer; /* Cambia el cursor a una mano */
+    font-size: 1.5em; /* Tamaño del texto */
+    display: flex; /* Usa flexbox para centrar el contenido */
+    align-items: center; /* Centra verticalmente */
+    justify-content: center; /* Centra horizontalmente */
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3); /* Sombra para darle profundidad */
+    transition: background-color 0.3s;
+    padding: 5px 5px; /* Ajusta el espaciado para reducir el tamaño del botón */
+    font-size: 1em; /* Transición suave del color de fondo */
+}
+
+#botonAyuda:hover {
+    background-color: rgb(54, 124, 124); /* Cambia el color al pasar el mouse */
+}
+
+#botonAyuda span {
+    display: block;
+}
+.titulo-con-boton {
+    display: flex; /* Usa Flexbox solo para este div interno */
+    align-items: center; /* Alinea verticalmente el texto y el botón */
+    gap: 10px; /* Espacio entre el texto y el botón */
+}
+.titulo-y-boton {
+    display: flex; /* Aplica Flexbox al contenedor */
+    align-items: center; /* Alinea verticalmente el título y el botón */
+    justify-content: center; /* Centra horizontalmente dentro de 'col' */
+    gap: 10px; /* Espacio entre el título y el botón */
+}
+.tooltip-text {
+    visibility: hidden; /* Ocultar por defecto */
+    width: 120px; /* Ancho del tooltip */
+    background-color: black; /* Fondo del tooltip */
+    color: #fff; /* Color del texto */
+    text-align: center; /* Texto centrado */
+    border-radius: 6px; /* Bordes redondeados */
+    padding: 5px 0; /* Espaciado interno */
+
+    /* Posicionamiento */
+    position: absolute;
+    z-index: 1;
+    bottom: 150%;
+    left: 50%;
+    margin-left: -60px; /* Centrar respecto al botón */
+
+    /* Estilo de la flecha */
+    opacity: 0; /* Inicialmente transparente */
+    transition: opacity 0.3s;
+}
+
+#botonAyuda:hover .tooltip-text {
+    visibility: visible; /* Mostrar al pasar el mouse */
+    opacity: 1; /* Hacer visible */
+}
+
+.tooltip-text::after {
+    content: "";
+    position: absolute;
+    top: 100%; /* Abajo del tooltip */
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: black transparent transparent transparent; /* Triángulo para la flecha */
+}
+#titlo{
+    color: #ff702a; /* Color del título */
+    margin-bottom: 10px; /* Espaciado debajo del título */
+}
+body {
+    padding-top: 150px; /* Ajusta este valor según la altura de tu header */
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100; /* Asegúrate de que esto sea mayor que el z-index del contenido */
+    /* Resto de tus estilos para el header */
+}

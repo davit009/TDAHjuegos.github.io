@@ -209,3 +209,11 @@ header {
     z-index: 100; /* Asegúrate de que esto sea mayor que el z-index del contenido */
     /* Resto de tus estilos para el header */
 }
+#mensajeFelicitaciones {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    /* Otros estilos que necesites... */
+}

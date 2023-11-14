@@ -222,11 +222,11 @@ section{
     justify-content: center;
     align-items: center;
     width: 50%; /* Asegúrate de que ocupa todo el ancho */
-    padding: 10px 0; /* Ajusta el relleno según sea necesario */
+    padding: 100px 0;
 }
 .btn {
-    padding: 15px 30px; /* Aumenta el relleno para hacer el botón más grande */
-    font-size: 1.5rem; /* Aumenta el tamaño de la fuente para que coincida con el tamaño del botón */
-    border-radius: 8px; /* Ajusta el radio del borde si es necesario */
+    padding: 15px 30px; 
+    font-size: 1.5rem; 
+    border-radius: 8px; 
 }
 

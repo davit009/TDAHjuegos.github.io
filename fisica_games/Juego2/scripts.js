@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", () => {
         document.getElementById("mensajeFelicitaciones").style.display = "block";
 
         setTimeout(() => {
-            window.location.href = "..\fisica.html"; // Cambia esto a la URL que prefieras
+            window.location.href = "../../fisica.html#menu"; // Cambia esto a la URL que prefieras
         }, 3000);
     }
 }

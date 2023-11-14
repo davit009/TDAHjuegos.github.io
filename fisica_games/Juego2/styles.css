@@ -215,5 +215,11 @@ header {
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 1000;
-    /* Otros estilos que necesites... */
+    background-size: contain; /* O el tamaño específico que desees */
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#mensajeFelicitaciones img {
+    width: 100%; /* O el tamaño específico que desees */
+    height: auto; /* Esto mantiene la proporción de aspecto de la imagen */
 }

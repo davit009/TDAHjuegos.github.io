@@ -71,7 +71,7 @@ function play(){
         document.addEventListener('keydown', (e) => {
             if(e.key == 'ArrowUp' || e.key == ' '){
                 img.src = 'Angry1.png';
-                bird_dy = -7.6;
+                bird_dy = -7.8;
             }
         });
 

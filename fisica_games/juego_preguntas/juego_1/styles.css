@@ -221,8 +221,8 @@ section{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 50%; /* Asegúrate de que ocupa todo el ancho */
-    padding: 100px 0;
+    width: 100%; /* Asegúrate de que ocupa todo el ancho */
+    padding: 5px 0;
 }
 .btn {
     padding: 15px 30px; 

@@ -50,7 +50,15 @@ function loseLive() {
     lives--;
     livesHtml.innerHTML = lives;
     reducirBarraLives((lives/maxLives)*100);
-}
+
+
+if (lives <= 0) {
+    var overlay = document.getElementById("overlay");
+    overlay.style.display = "block";
+
+    var gameOverContainer = document.getElementById("gameOverContainer");
+    gameOverContainer.style.display = "block";
+}}
 
 function controlarRespuesta(opcionElegida){    
     txt_resultado.innerHTML = opcionElegida.innerHTML;

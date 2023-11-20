@@ -121,7 +121,8 @@ body{
 }
 
 #gameOverImage {
-    max-width: 50%; 
+    margin-top:140px;
+    max-width: 30%; 
     margin-bottom: 20px; 
 }
 

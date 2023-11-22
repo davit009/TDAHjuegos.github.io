@@ -1,0 +1,53 @@
+[
+    {
+      "categoria": "Ingles",
+      "pregunta": "¿¿Cómo se escribe el siguiente número en inglés?",
+      "respuesta": "One",
+      "incorrecta1": "On",
+      "incorrecta2": "Onee",
+      "incorrecta3": "Oen",
+      "imagen": "https://i.pinimg.com/564x/0e/53/19/0e5319a6b000692e7fd692b2db976407.jpg",
+      "objectFit": "cover"
+    },
+    {
+      "categoria": "Ingles",
+      "pregunta": "¿Cómo se escribe el siguiente número en inglés?",
+      "respuesta": "Five",
+      "incorrecta1": "Fiv",
+      "incorrecta2": "Fivve",
+      "incorrecta3": "Fyve",
+      "imagen": "https://img.freepik.com/vector-premium/personaje-dibujos-animados-creativo-numero-5_853066-23.jpg",
+      "objectFit": "cover"
+    },
+    {
+      "categoria": "Ingles",
+      "pregunta": "¿¿Cómo se escribe el siguiente número en inglés?",
+      "respuesta": "Eight",
+      "incorrecta1": "Aight",
+      "incorrecta2": "Eiight",
+      "incorrecta3": "Eigth",
+      "imagen": "https://static.vecteezy.com/system/resources/previews/007/141/784/non_2x/a-super-hero-boy-with-number-eight-cartoon-free-vector.jpg",
+      "objectFit": "cover"
+    },
+    {
+      "categoria": "Ingles",
+      "pregunta": "¿¿Cómo se escribe el siguiente número en inglés?",
+      "respuesta": "Two",
+      "incorrecta1": "Tow",
+      "incorrecta2": "To",
+      "incorrecta3": "Tu",
+      "imagen": "https://static.vecteezy.com/system/resources/previews/007/095/079/original/a-girl-with-number-two-cartoon-free-vector.jpg",
+      "objectFit": "cover"
+    },
+    {
+      "categoria": "Ingles",
+      "pregunta": "¿Cómo se escribe el siguiente número en inglés?",
+      "respuesta": "Nine",
+      "incorrecta1": "Nin",
+      "incorrecta2": "Nyne",
+      "incorrecta3": "Nein",
+      "imagen": "https://static8.depositphotos.com/1007989/858/i/950/depositphotos_8586649-stock-illustration-number-kid-9.jpg",
+      "objectFit": "cover"
+    }
+  ]
+  
